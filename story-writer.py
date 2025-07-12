@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Creati-story AI")
 @st.cache_resource
 def load_model():
-    return pipeline("text-generation",model="gpt2")
+    return pipeline("text-generation",model="mistralai/Mistral-7B-Instruct-v0.2")
 
 model=load_model()
 
